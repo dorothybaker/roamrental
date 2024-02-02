@@ -28,8 +28,6 @@ export default function Heart({ id }) {
         ...prev,
         favorites: updateFavorites(id, prev.favorites),
       }));
-
-      window.location.reload();
     },
   });
 
