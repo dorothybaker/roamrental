@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Playfair Display", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.poppins {
+  font-family: "Poppins";
+}
+
+.mantine-Modal-title {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.mantine-DatePicker-day,
+.mantine-DatePicker-weekday {
+  font-size: normal !important;
+  font-family: "Poppins";
+}
+
+.mantine-DatePicker-calendarHeaderLevel {
+  font-size: medium !important;
+  font-weight: 600;
+}
+
+.mantine-Modal-title {
+  font-weight: 600;
+  font-size: large;
+}
+
+.m-396ce5cb[data-selected] {
+  background: rgba(0, 0, 255, 0.7) !important;
+  color: white !important;
+}
+
+input,
+textarea {
+  font-family: "Playfair Display" !important;
+}
+
+textarea::placeholder {
+  font-family: "Playfair Display" !important;
+}
+
+.mantine-NumberInput-input {
+  font-family: "Poppins" !important;
+}
