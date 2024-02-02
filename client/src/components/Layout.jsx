@@ -14,7 +14,7 @@ export default function Layout() {
   useFavorites();
   useBookings();
 
-  const { isAuthenticated, user, getAccessTokenWithPopup } = useAuth0();
+  const { isAuthenticated, user, getAccessTokenSilently } = useAuth0();
   const { setUserDetails } = useContext(UserDetailContext);
 
   const { mutate } = useMutation({
@@ -24,7 +24,7 @@ export default function Layout() {
 
   useEffect(() => {
     const getTokenAndRegsiter = async () => {
-      const res = await getAccessTokenWithPopup({
+      const res = await getAccessTokenSilently({
         authorizationParams: {
           audience: "https://dev-ailu4icbwb268s5f.us.auth0.com/api/v2/",
           scope: "openid profile email",
