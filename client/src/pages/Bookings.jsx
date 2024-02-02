@@ -38,13 +38,13 @@ export default function Bookings() {
               ))}
           </div>
         ) : (
-          <div className="h-[45vw] px-2 flex items-center w-full justify-center text-center text-lg font-semibold">
+          <div className="h-[70vw] px-2 flex items-center w-full justify-center text-center text-lg font-semibold">
             There are no properties yet!
           </div>
         )}
 
         {isError && (
-          <div className="h-[45vw] flex items-center w-full px-2 justify-center text-center text-lg font-semibold">
+          <div className="h-[70vw] flex items-center w-full px-2 justify-center text-center text-lg font-semibold">
             Error occured while fetching the properties.
           </div>
         )}

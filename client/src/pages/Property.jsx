@@ -50,7 +50,7 @@ export default function Property() {
     <section>
       {isLoading && <Loader />}
       {isError && (
-        <div className="h-[45vw] flex items-center w-full px-2 justify-center text-center text-lg font-semibold">
+        <div className="h-[70vw] flex items-center w-full px-2 justify-center text-center text-lg font-semibold">
           Error occured while fetching the properties.
         </div>
       )}
