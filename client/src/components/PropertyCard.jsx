@@ -5,7 +5,10 @@ export default function PropertyCard({ item }) {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-start gap-2 sm:w-[300px] w-full hover:bg-black/10 transition duration-200 rounded-lg p-2 hover:cursor-pointer hover:shadow-md relative">
+    <div
+      className="flex flex-col items-start gap-2 sm:w-[300px] w-full hover:bg-black/10 transition duration-200 rounded-lg p-2 hover:cursor-pointer hover:shadow-md relative"
+      onClick={() => navigate(`../properties/${item?.id}`)}
+    >
       <div className="h-[200px] w-full">
         <img
           src={item.image}
@@ -14,10 +17,7 @@ export default function PropertyCard({ item }) {
         />
       </div>
       <Heart id={item?.id} />
-      <div
-        className="flex flex-col gap-[2px] px-1"
-        onClick={() => navigate(`../properties/${item?.id}`)}
-      >
+      <div className="flex flex-col gap-[2px] px-1">
         <div className="font-semibold text-lg poppins">
           <span className="text-orange-400 poppins">$</span>
           {item?.price}
