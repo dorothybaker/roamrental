@@ -33,8 +33,7 @@ export default function Heart({ id }) {
     },
   });
 
-  const handleLike = (e) => {
-    e.stopPropagation()
+  const handleLike = () => {
     if (validateLogin()) {
       setHeartColor((prev) => (prev === "red" ? "white" : "red"));
       mutate();
@@ -45,8 +44,9 @@ export default function Heart({ id }) {
     <AiFillHeart
       size={24}
       color={heartColor}
-      className="absolute top-3 right-3 cursor-pointer"
-      onClick={() => {
+      className="absolute top-3 right-3 cursor-pointer z-10"
+      onClick={(e) => {
+        e.stopPropagation();
         mutate();
         handleLike();
       }}
