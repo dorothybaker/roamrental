@@ -47,7 +47,6 @@ export default function Heart({ id }) {
       className="absolute top-3 right-3 cursor-pointer z-10"
       onClick={(e) => {
         e.stopPropagation();
-        mutate();
         handleLike();
       }}
     />
