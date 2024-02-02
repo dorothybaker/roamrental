@@ -33,7 +33,8 @@ export default function Heart({ id }) {
     },
   });
 
-  const handleLike = () => {
+  const handleLike = (e) => {
+    e.stopPropagation()
     if (validateLogin()) {
       setHeartColor((prev) => (prev === "red" ? "white" : "red"));
       mutate();
