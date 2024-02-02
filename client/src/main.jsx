@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       domain="dev-ailu4icbwb268s5f.us.auth0.com"
       clientId="2xLld0j2yhJ66wc6IizqVYcVdvPC2Ghj"
       authorizationParams={{
-        redirect_uri: "http://localhost:5173",
+        redirect_uri: "https://roamrental-client.vercel.app",
       }}
       audience="https://dev-ailu4icbwb268s5f.us.auth0.com/api/v2/"
       scope="openid profile email"
