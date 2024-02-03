@@ -21,7 +21,7 @@ export default function Favorites() {
 
         {isLoading && <Loader />}
 
-        {data?.length > 0 ? (
+        {!isLoading && !isError && data?.length > 0 ? (
           <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-1 place-content-center gap-y-3 min-h-[40vh]">
             {data
               ?.filter((property) => favorites?.includes(property.id))

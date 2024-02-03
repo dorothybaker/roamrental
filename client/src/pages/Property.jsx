@@ -54,7 +54,7 @@ export default function Property() {
           Error occured while fetching the properties.
         </div>
       )}
-      {data && (
+      {data && !isLoading && !isError && (
         <div className="flex flex-col gap-6 py-6 sm:px-6 px-3 mx-auto max-w-7xl items-start w-full">
           <div
             className="flex gap-[2px] text-sm font-semibold items-center cursor-pointer"
